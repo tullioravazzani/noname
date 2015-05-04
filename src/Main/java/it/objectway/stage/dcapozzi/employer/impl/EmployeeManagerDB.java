@@ -25,7 +25,7 @@ public class EmployeeManagerDB implements EmployeeManager {
 
         try {
             connection = DriverManager
-                    .getConnection("jdbc:mysql://localhost:3306/test", "pong", "id46kvx3");
+                    .getConnection("jdbc:mysql://localhost:3306/test", "test", "test");
 
         } catch (SQLException e) {
             System.out.println("Connection Failed! Check output console");

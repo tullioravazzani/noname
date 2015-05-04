@@ -1,5 +1,8 @@
 package Main.java;
 
+import java.io.BufferedInputStream;
+import java.io.DataInputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
 
 /**
@@ -8,11 +11,11 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) {
         try {
-            char c = (char) System.in.read();
-            while(c != 0) {
-                System.out.println("read: " + c);
-                c = (char) System.in.read();
-            }
+            String filename = "C:\\Users\\stageusr2015\\Desktop\\stage\\noname\\src\\Main\\java\\readme.txt";
+            FileInputStream fis = new FileInputStream(filename);
+            BufferedInputStream bis = new BufferedInputStream(fis);
+
+            
         } catch (IOException e) {
             e.printStackTrace();
         }
